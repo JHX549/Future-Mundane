@@ -1,0 +1,520 @@
+/* Custom font */
+/* @font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+} */
+
+/************** CSS Reset **************/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  background-color: black;
+  font-family: Neuropol X;
+}
+
+/**************** title ****************/
+#title{
+  height: 70vw;
+  width: 100%;
+}
+
+#mundane{
+font-size: 3vw;
+color: white;
+font-family: Arial;
+letter-spacing: 10.5vw;
+position: absolute;
+top: 22vw;
+left: 9vw;
+width: 80vw;
+}
+
+#topfuture{
+  font-size: 15vw;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.7) 100%);
+  position: absolute;
+  top: 14vw;
+  left: 8vw;
+}
+/**************** title end ****************/
+
+/**************** section ****************/
+.grid-item{
+  height: 4vw;
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+
+.magenta{
+  font-size: 17vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 55%, rgba(207,0,120,1) 75%, rgb(255, 0, 147) 100%);
+  width:100%;
+}
+
+.orange{
+  font-size: 17vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 55%, rgba(201,80,0,1) 75%, rgba(255,102,0,1) 100%);
+  width:100%;
+}
+
+.green{
+  font-size: 17vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 55%, rgba(38,181,0,1) 75%, rgba(54,255,0,1) 100%);
+  width:100%;
+}
+
+.gray{
+  font-size: 17vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 55%, rgba(74,74,74,1) 75%, rgba(57,57,57,1) 100%);
+  width:100%;
+}
+
+.webkit{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.largesize{
+  font-size: 28vw;
+  text-indent: -5vw;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: -5vw;
+}
+
+.largesize2{
+  font-size: 28vw;
+  text-indent: -48vw;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: -5vw;
+}
+
+.vertical1{
+  transform: rotate(-90deg)
+}
+
+.vertical2{
+  transform: rotate(90deg)
+}
+
+.vertical-grid-item{
+  height: 4.5vw;
+  width: 165vw;
+}
+
+.vertical{
+  position: relative;
+  top: 70vw;
+}
+
+.magentavertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(207,0,120,1) 75%, rgb(255, 0, 147) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.orangevertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(201,80,0,1) 75%, rgba(255,102,0,1) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.greenvertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(38,181,0,1) 75%, rgba(54,255,0,1) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.grayvertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(74,74,74,1) 75%, rgba(57,57,57,1) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.over{
+  overflow: hidden;
+}
+/**************** section end ****************/
+
+/**************** section test ****************
+.orangetest{
+  font-size: 17vw;
+  color:rgb(255, 102, 0);
+  width:100%;
+  text-shadow: 0vw 0vw 5vw rgb(255, 102, 0);
+}
+
+.magentatest{
+  font-size: 20vw;
+  color:rgb(255, 0, 147);
+  width:100%;
+  text-shadow: 0vw 0vw 5vw rgb(255, 0, 147);
+}
+
+.gradient{
+  width: 100vw;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.8) 80%, rgb(0, 0, 0, 0) 100%);
+  position: relative;
+  top: 18vw;
+  height: 13vw;
+}
+
+#vertical1{
+  transform: rotate(-90deg)
+}
+
+.vertical-grid-item{
+  height: 4.5vw;
+  width: 165vw;
+}
+
+.vertical{
+  position: relative;
+  top: 70vw;
+}
+
+.magentavertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(207,0,120,1) 75%, rgb(255, 0, 147) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.orangevertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(201,80,0,1) 75%, rgba(255,102,0,1) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.greenvertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(38,181,0,1) 75%, rgba(54,255,0,1) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.grayvertical{
+  font-size: 30vw;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 58%, rgba(74,74,74,1) 75%, rgba(57,57,57,1) 100%);
+  width:100%;
+  position: relative;
+  bottom: 8vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.over{
+  overflow: hidden;
+}
+/**************** section test end ****************/
+
+/**************** opacity ****************/
+.thirty{
+  opacity: 30%;
+}
+
+.fifty{
+  opacity: 50%;
+}
+
+.seventy{
+  opacity: 70%;
+}
+
+.hundred{
+  opacity: 99.99%;
+}
+/**************** opacity end ****************/
+
+/**************** textbox1 ****************/
+#heading1{
+  font-size: 2vw;
+  position: relative;
+  left: 18vw;
+  width: 50%;
+}
+
+#subheading1{
+  font-size: 2vw;
+  position: relative;
+  top: 10vw;
+  left: 60vw;
+  width: 40%;
+}
+.reflection{
+  transform: rotateX(180deg);
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(65, 65, 65, 0.5)50%, rgba(0, 0, 0, 0));
+        -webkit-background-clip: text;
+        color: transparent;
+}
+
+.text{
+  font-family: Arial;
+  color: white;
+}
+/**************** textbox1 end ****************/
+
+/****************** textbox2 ******************/
+.but{
+  background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+}
+
+#but1{
+  font-size: 10vw;
+  position: relative;
+  left: 55vw;
+  width: 25%;
+}
+
+#but2{
+  font-size: 20vw;
+  position: relative;
+  left: 20vw;
+  width: 30%;
+}
+
+#but3{
+  font-size: 8vw;
+  position: relative;
+  left: 65vw;
+  width: 30%;
+}
+/**************** textbox2 end ****************/
+
+/****************** textbox3 ******************/
+#Wab1{
+  font-size: 3vw;
+  position:relative;
+  left: 30vw;
+  width: 46%;
+}
+
+#Wab2{
+  font-size:2.5vw;
+  position:relative;
+  left: 15vw;
+  top: 10vw;
+  width: 40%;
+}
+
+#Wab3{
+  font-size: 1.5vw;
+  position: relative;
+  left: 63vw;
+  width: 20%;
+  top: 15vw;
+}
+/**************** textbox3 end ****************/
+
+/****************** textbox4 *****************/
+#textbox4{
+  width: 50vw;
+  font-family: Arial;
+  font-size: 1.5vw;
+  background-image: linear-gradient(-10deg, rgba(55, 55, 55, 0) 0%, rgb(153, 153, 153) 75%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 25vw;
+}
+
+#nick{
+  font-family: Arial;
+  font-style: italic;
+  font-size: 1.5vw;
+  background-image: linear-gradient(-10deg, rgba(55, 55, 55, 0) 0%, rgb(153, 153, 153) 75%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 65vw;
+  top: 1vw;
+  width: 20%;
+}
+/**************** textbox4 end ****************/
+
+/****************** bottom *****************/
+#mundanebtm{
+  font-family: Arial;
+  font-size: 2.5vw;
+  color: white;
+  letter-spacing: 11vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+#futurebtm{
+  font-size: 2vw;
+  letter-spacing: 3vw;
+  background-image: linear-gradient(0deg, rgba(74, 74, 74, 0) 0%, rgb(157, 157, 157) 75%, rgb(237, 237, 237) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  position: relative;
+  left: 31vw;
+  top: 10vw;
+  opacity: 0.3;
+  transition: 1s;
+}
+
+#futurebtm:hover{opacity: 1}
+/**************** bottom end ****************/
+.break{
+  height: 30vw;
+}
+
+.verbreak{
+  height: 30vw;
+}
+
+.break2{
+  height: 30vw;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/************** End CSS Reset **************/
+
+/* Media Query */
+@media (max-width: 430px) {
+  #mundane{
+    top: 85vw;
+    }
+  #topfuture{
+      top: 77vw;
+    }
+  #title{
+      height: 300vw;
+    }
+
+  #heading1{
+    font-size: 4vw;
+    left: 8vw;
+    width: 90%;
+  }
+
+  #subheading1{
+    font-size: 4vw;
+    left: 40vw;
+    width:60%;
+  }
+
+  .break{
+    height: 200vw;
+  }
+
+  #but1{
+    font-size: 20vw;
+    left: 50vw;
+    width: 30%;
+  }
+
+  #but2{
+    font-size: 30vw;
+    left: 10vw;
+    width: 50%;
+  }
+
+  #but3{
+    font-size: 18vw;
+  }
+
+  #Wab1{
+    font-size: 5vw;
+    position: relative;
+    left: 13vw;
+    width: 80%;
+  }
+  
+  #Wab2{
+    font-size:4vw;
+    position: relative;
+    left: 10vw;
+    width: 60%;
+    top: 35vw;
+  }
+  
+  #Wab3{
+    font-size: 3vw;
+    position: relative;
+    left: 50vw;
+    width: 40%;
+    top: 80vw;
+  }
+
+  #textbox4{
+    font-size: 3vw;
+    width: 70%;
+    left: 15vw;
+  }
+
+  #nick{
+    font-size: 3vw;
+    width: 30%;
+    left: 60vw;
+    top: 5vw;
+  }
+
+  .break2{
+    height: 80vw;
+  }
+
+  #mundanebtm{
+    font-size: 5vw;
+    letter-spacing: 8vw;
+    text-align: center;
+  }
+
+  #futurebtm{
+    font-size: 4vw;
+    left: 25vw;
+  }
+ }
