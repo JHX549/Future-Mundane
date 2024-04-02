@@ -1,15 +1,32 @@
-$(window).on("scroll", function () {
-    if (window.scrollY > window.outerHeight) {
-      $("#futurebtm").addClass("active");
-      setTimeout(function() {
-        var theta = ($(window).scrollTop() - (window.outerHeight + (window.outerHeight/2))) / 500;
-        $('#futurebtm').css({ transform: 'rotate(' + theta + 'rad)' });
-      })
+// const items = document.querySelectorAll('.appear');
+
+// const active = function (entries) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('inview');
+//     } else {
+//       entry.target.classList.remove('inview');
+//     }
+//   });
+// };
+// const io2 = new IntersectionObserver(active);
+// for (let i = 0; i < items.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+//   io2.observe(items[i]);
+// }window.CP.exitedLoop(0);
+const items = document.querySelectorAll('.appear');
+
+const active = function (entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('inview');
     } else {
-      $("#futurebtm").removeClass("active");
+      entry.target.classList.remove('inview');
     }
   });
-  
-  $('#futurebtm').on('click',function() {
-    $("html, body").animate({ scrollTop: 0 }, 300000000);
-  })
+};
+
+const io2 = new IntersectionObserver(active);
+
+items.forEach(item => {
+  io2.observe(item);
+});
